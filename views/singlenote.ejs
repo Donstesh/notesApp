@@ -1,0 +1,18 @@
+<%- include('partials/header') %>
+
+<main class="container">
+    
+    <div id="note">
+        
+        <h2 id="note-title-single"><%= note.title %></h2>
+        <p id="note-body"><%= note.body %></p>
+        <a href="/notes" class="btn back">Go Back</a>
+        <a href="/edit/<%= note.id %>" class="btn">Edit</a>
+        <form action="/delete/<%= note.id %>" method="post" id="delete-form">
+            <!-- <a href="/delete/<%= note.id %>" class="btn del">Delete</a> -->
+            <input type="submit" class="btn del" value="Delete">
+        </form>
+    </div>
+</main>
+
+<%- include('partials/footer') %>

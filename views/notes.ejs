@@ -1,0 +1,13 @@
+<%- include('partials/header') %>
+   <main class="container">
+       <div>
+        
+       </div>
+    <ul id="notes">
+        <% for(let note of notes){ %>
+            <li class="note"><a href="/note/<%= note.id %>"><%= `${note.title}` %></a></li>
+            <!-- <p id="textbody"><%= `${note.body}` %></p> -->
+        <% } %>    
+    </ul>  
+   </main>  
+<%- include('partials/footer') %>

@@ -1,0 +1,225 @@
+@font-face {
+    font-family: Raleway;
+    src: url(/css/Raleway-VariableFont_wght.ttf);
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Raleway;
+    box-sizing: border-box;;
+}
+.container {
+    padding: 0 100px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    height: 80px;
+    margin-bottom: 12px;
+}
+
+#logo {
+    font-size: 28px;
+    color: #16dada;
+}
+
+.nav-link {
+    display: inline;
+    margin-left: 5px;
+}
+
+.nav-link a{
+    text-decoration: none;
+    padding: 4px 6px;
+    color: #16dada;
+}
+
+.nav-link a:hover {
+    border-bottom: 2px solid #16dada;
+}
+
+#notes {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.note {
+    background-color: #f2f2f2;
+    padding: 10px;
+    font-size: 22px;
+    list-style: none;
+    border-bottom: 2px solid #e4e3e3;
+    margin-bottom: 4px;
+    text-decoration: none;
+}
+
+.note a {
+    text-decoration: none;
+    color: black;
+}
+#textbody {
+    background-color: #303030;
+    font-size: 22px;
+    padding: 20px 15px;
+    border-top: 2px solid #16dada;
+    background-color: #f2f2f2;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    display: none;
+}
+.btn {
+    color: white;
+    background-color: #16dada;
+    font-size: 18px;
+    padding: 8px 10px;
+    border: 1px solid #16dada;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 100px;
+}
+
+.btn:hover {
+    background-color: #19b4b4;
+}
+
+form {
+    background-color: #f2f2f2;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+form input[name='title'], form textarea[name='body'] {
+    width: 100%;
+    margin-bottom: 12px;
+    font-size: 22px;
+    padding: 10px;
+    border: 1px solid #f2f2f2;
+}
+.view-title {
+    text-align: center;
+    color: #16dada;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+#note {
+    background-color: #f2f2f2;
+    width: 80%;
+    padding: 15px;
+    margin: 0 auto;
+}
+#note-title-single {
+    color: #16dada;
+    border-bottom: 2px solid #16dada;
+    margin-bottom: 20px;
+}
+#note-body {
+    text-align: justify;
+    margin-bottom: 35px;
+}
+.del {
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    padding: 8px 10px;
+    border: 1px solid red;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 100px;
+}
+.del:hover {
+    background-color: #e21818;
+}
+
+.back {
+    margin-bottom: 35px;
+    background-color: #03726c;
+}
+
+#delete-form {
+    display: inline;
+}
+
+#home {
+    display: flex;
+    height: 80vh;
+    align-items: center;
+
+}
+
+#logotxt {
+    color: #e21818;
+}
+
+#home col {
+    width: 50%;
+}
+
+#home h1 {
+    margin-bottom: 30px;
+}
+
+#home .btn:hover {
+    background-color: #f2f2f2;
+    color: #16dada;
+}
+#home p {
+    margin-bottom: 20px;
+}
+#home img {
+    width: 100%;
+}
+
+#img404{
+    height: 50%;
+    margin-top: 48px;
+    width: 100%;
+}
+
+.access-point {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.access-point form {
+    width: 40%;
+    padding: 20px;
+}
+
+.access-point .form-input {
+    font-size: 20px;
+    padding: 8px;
+    margin-bottom: 4px;
+    align-self: center;
+    width: 80%;
+}
+
+.access-point a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.access-point .btn {
+    align-self: center;
+    margin-top: 20px;
+}
+
+.viewtitle {
+    text-align: center;
+    color: #16dada;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.error-message {
+    color: #e21818;
+    text-align: center;
+    padding-bottom: 10px;
+}

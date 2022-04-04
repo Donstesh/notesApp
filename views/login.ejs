@@ -1,0 +1,19 @@
+<%- include('partials/header') %>
+    <main class="access-point">
+        <form action="/login" method="post">
+            <h1 class="viewtitle">Login</h1>
+            <% if(error) { %>
+                <p class="error-message"> <%= errorMessage %></p>
+                <input class="form-input" type="email" name="email" id="" value="<%= email %>" required>
+                <input class="form-input" type="password" name="password" id="" value="<%= password %>" required>
+            <% } else { %>
+                <input class="form-input" type="email" name="email" id="" placeholder="Enter Email" required>
+                <input class="form-input" type="password" name="password" id="" placeholder="Password" required>
+            <% } %>
+
+            
+            <input type="submit" value="Login" class="btn">
+            <p>Don't have an account? <a href="/signup">Sign Up</a></p>
+        </form>
+    </main> 
+<%- include('partials/footer') %>
